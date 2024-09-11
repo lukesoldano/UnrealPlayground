@@ -18,4 +18,6 @@ public:
    FColor GetTypeColor() const override { return FColor::Cyan; }
    uint32 GetCategories() override { return EAssetTypeCategories::Misc; }
 
+   void OpenAssetEditor(const TArray<UObject*>& InObjects, TSharedPtr<class IToolkitHost> EditWithinLevelEditor) override;
+
 };

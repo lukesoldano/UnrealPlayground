@@ -38,10 +38,12 @@ public class MyCustomAssetPluginEditor : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-            "MyCustomAssetPlugin",
-            "UnrealEd",
+				"MyCustomAssetPlugin",
+				"UnrealEd",
 				// ... add private dependencies that you statically link with here ...	
-			}
+				"Json",
+                "JsonUtilities",
+            }
 			);
 		
 		

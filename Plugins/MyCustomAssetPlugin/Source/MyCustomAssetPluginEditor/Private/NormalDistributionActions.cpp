@@ -3,3 +3,9 @@
 
 #include "NormalDistributionActions.h"
 
+#include "NormalDistributionEditorToolkit.h"
+
+void FNormalDistributionActions::OpenAssetEditor(const TArray<UObject*>& InObjects, TSharedPtr<class IToolkitHost> EditWithinLevelEditor)
+{
+   MakeShared<FNormalDistributionEditorToolkit>()->InitEditor(InObjects);
+}
